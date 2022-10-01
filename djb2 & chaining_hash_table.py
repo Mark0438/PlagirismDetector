@@ -222,8 +222,5 @@ text1 = "The legal system is made up of civil courts, criminal courts and specia
 text2 = "The legal system is made up of criminal and civil courts and specialty courts like  bankruptcy courts         and family law courts. Each court is vested with its own jurisdiction. Jurisdiction refers to the types         of cases the court is permitted to rule on. Sometimes, only one type of court can hear a particular case."
 print(regular_get_match(text1, text2, 8))
 
-#show that the two approaches give the same answer.
-assert(regular_get_match(text1, text2, 8)) == rh_get_match(text1, text2, 8)
-
 
 # "Hash Functions". (2021). York University CSE. Retrieved from http://www.cse.yorku.ca/~oz/hash.html
