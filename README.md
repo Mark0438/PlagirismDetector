@@ -1,8 +1,13 @@
 # Plagirism Detector
-- The Plagirism Dectector detect duplicate substrings in two strings. It can identify and return the start index of duplicate substrings in both strings. Although as the input string length increases, the output becomes long and hard to track manually, the functions provided robust, back-end groundwork for us to build a more intuitive plagiarism interface upon. For example, we can add a function that highlights the duplicate substrings based on the returned indexes and achieve the results in Figure 1(shown in our presentation session). 
+- The Plagirism Dectector detect duplicate substrings in two strings. It can identify and return the start index of duplicate substrings in both strings. Although as the input string length increases, the output becomes long and hard to track manually, the functions provided robust, back-end groundwork for us to build a more intuitive plagiarism interface upon. For example, we can add a function that highlights the duplicate substrings based on the returned indexes. 
+
+
+## Data Structures
+There are two implementations of has table. The first uses a **double hashing function in an open-addressing hash table** that avoids colluision by continuously finding unused spots for each hash node. The second uses the **djb2 hash function in a chaining hash table** that avoids collution by chaining the nodes that are given the same hash value. 
+
 
 ## Complexity Discussion
-- As Cormen et al.(2009) discussed, the operations of both open addressing hash table and chaining table should have O(1) complexity. This is proven as we plot the logN graph in the second graph, as the logN function clearly dwarf the hash-table approaches. 
+- As Cormen et al.(2009) discussed, the operations of both open addressing hash table and chaining table should have O(1) complexity. This is proven as we plot the logN graph together with the runtime graph of two hashtable in complexity_analysis.py, and the logN function clearly dwarf the hash-table approaches. 
 - The differeces between the runtime of the two tables might be explained by: the choice of hash functions. Djb2 hash function used in the chaining table is proven to be excellent than many other hash functions, including the one we use in open adressing hash table.
 
 ## Advantages 
