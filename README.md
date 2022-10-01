@@ -1,4 +1,4 @@
-# PlagirismDetector
+# Plagirism Detector
 - The Plagirism Dectector detect duplicate substrings in two strings. It can identify and return the start index of duplicate substrings in both strings. Although as the input string length increases, the output becomes long and hard to track manually, the functions provided robust, back-end groundwork for us to build a more intuitive plagiarism interface upon. For example, we can add a function that highlights the duplicate substrings based on the returned indexes and achieve the results in Figure 1(shown in our presentation session). 
 
 ## Complexity Discussion
